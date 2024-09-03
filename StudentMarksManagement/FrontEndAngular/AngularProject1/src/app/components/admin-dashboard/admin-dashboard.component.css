@@ -1,0 +1,115 @@
+/* Apply styles to the entire HTML and body elements */
+html, body {
+  background-image: url('https://www.ramsa.com/sites/default/files/A12059%202019A56_411.jpg'); /* Sets the background image for the page */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  height: auto; /* Allows the height to adjust automatically */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  font-family: Arial, sans-serif; /* Sets the font family for the page */
+}
+
+/* Styles for the container that holds content */
+.container {
+  width: 100%; /* Makes the container full-width */
+  max-width: 900px; /* Limits the container's width to 800px */
+  border-radius: 12px; /* Rounds the corners of the container */
+  margin: 0; /* Removes default margin */
+  padding: 20px; /* Adds padding inside the container */
+  min-height: 84vh; /* Ensures a minimum height of 84% of the viewport height */
+  position: relative; /* Allows for positioning of child elements */
+  background-color: rgba(255, 255, 255, 0.9); /* Sets a white background with slight transparency */
+}
+
+/* Styles for the card component */
+.card {
+  background-color: transparent; /* Sets the background to transparent */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+  border: none; /* Removes border */
+  /* text-align: center; / / Optional: Centers text inside the card */
+  width: 100%; /* Makes the card full-width */
+}
+
+/* Styles for primary buttons */
+.btn-primary {
+  border-radius: 20px; /* Rounds the corners of the button */
+  /* background-color: #c66d6d; / / Optional: Sets a background color */
+  border: none; /* Removes the border */
+  padding: 0.6rem; /* Adds padding inside the button */
+  color: white; /* Sets the text color to white */
+}
+
+  /* Hover effect for primary buttons */
+  .btn-primary:hover {
+    background-color: darkblue; /* Changes background color on hover */
+  }
+
+/* Styles for success buttons */
+.btn-success {
+  border-radius: 20px; /* Rounds the corners of the button */
+  background-color: #28a745; /* Sets the background color to green */
+  border: none; /* Removes the border */
+  color: white; /* Sets the text color to white */
+}
+
+  /* Hover effect for success buttons */
+  .btn-success:hover {
+    background-color: #218838; /* Darkens the background color on hover */
+  }
+
+/* Styles for secondary buttons */
+.btn-secondary {
+  border-radius: 20px; /* Rounds the corners of the button */
+  background-color: #6c757d; /* Sets the background color to grey */
+  border: none; /* Removes the border */
+  color: white; /* Sets the text color to white */
+}
+
+  /* Hover effect for secondary buttons */
+  .btn-secondary:hover {
+    background-color: #5a6268; /* Darkens the background color on hover */
+  }
+
+/* Styles for the table component */
+.table {
+  background-color: rgba(255, 255, 255, 0.9); /* Sets a white background with slight transparency */
+  border-radius: 12px; /* Rounds the corners of the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth effect */
+  width: 100%; /* Makes the table full-width */
+  margin: 0; /* Removes margin */
+  align-items: center; /* Centers items inside the table (if used within a flex container) */
+  padding: 0; /* Removes padding */
+}
+
+  /* Styles for table headers */
+  .table thead {
+    background-color: #f8f9fa; /* Sets a light background color for table headers */
+  }
+
+/* Styles for form labels */
+.form-group label {
+  font-weight: bold; /* Makes the label text bold */
+}
+
+/* Styles for form controls */
+.form-control {
+  border-radius: 0; /* Removes border-radius (square corners) */
+  box-shadow: none; /* Removes shadow */
+}
+
+/* Adds space between buttons */
+.button-space {
+  margin: 10px; /* Adds right margin for spacing */
+ 
+}
+
+/* Styles for secondary headers (h2) */
+h2 {
+  color: black; /* Sets text color to black */
+  font-weight: bolder; /* Makes text bolder */
+}

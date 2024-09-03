@@ -1,0 +1,94 @@
+/* Apply styles to the body element */
+body {
+  background-image: url('https://images.pexels.com/photos/16938594/pexels-photo-16938594/free-photo-of-graduates-throwing-academic-hats.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Sets a background image */
+  background-size: cover; /* Ensures the background image covers the entire body */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  height: auto; /* Allows the height to adjust based on content */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  font-family: Arial, sans-serif; /* Sets the font family */
+}
+
+/* Styles for the container element */
+.container {
+  width: 120%; /* Sets the width to 120% of its parent, which may cause overflow */
+  max-width: 800px; /* Limits the width to a maximum of 800px */
+  border-radius: 12px; /* Rounds the corners of the container */
+  /* background-color: rgba(255, 255, 255, 0.5); / / Optional: Uncomment to add a translucent white background */
+  margin: 20; /* Sets margin (values should include units like px) */
+  padding: 20px; /* Adds padding inside the container */
+  min-height: 84vh; /* Ensures the container is at least 84% of the viewport height */
+  position: relative; /* Allows for absolute positioning of child elements if needed */
+}
+
+/* Styles for the card component */
+.card {
+  background-color: transparent; /* Makes the card background transparent */
+  padding: 0%; /* Sets padding to 0% (should be in px or rem for consistency) */
+  margin: 0; /* Removes margin */
+  background: none; /* Removes any background */
+  border: none; /* Removes border */
+  text-align: center; /* Centers text inside the card */
+  align-items: center; /* Aligns child items to the center (applies if card uses flexbox) */
+  width: 20px; /* Sets the width to 20px (seems very small, possibly needs adjustment) */
+}
+
+/* Styles for danger buttons */
+.btn-danger {
+  border-radius: 3px; /* Rounds the corners of the button */
+  background-color: #dc3545; /* Sets the background color to a red shade */
+  border: none; /* Removes default border */
+  color: white; /* Sets text color to white */
+  padding: 5px; /* Adds padding inside the button */
+  width: 80px; /* Sets the width of the button */
+  margin: auto; /* Centers the button horizontally within its parent */
+}
+
+  /* Hover effect for danger buttons */
+  .btn-danger:hover {
+    background-color: darkblue; /* Changes background color on hover */
+  }
+
+/* Styles for tables */
+.table {
+  background-color: rgba(255, 255, 255, 0.9); /* Sets a white background with slight transparency */
+  border-radius: 12px; /* Rounds the corners of the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth effect */
+  width: 140%; /* Sets the width to 140% of its parent, which may cause overflow */
+  margin: 0px; /* Removes margin */
+  padding: auto; /* Padding should be specified with units like px or rem */
+}
+
+  /* Styles for table headers */
+  .table thead {
+    background-color: #f8f9fa; /* Sets a light gray background for the table header */
+  }
+
+/* Styles for dark table headers */
+.thead-dark th {
+  background-color: white; /* Sets background color of table headers to white */
+  color: black; /* Sets text color to black */
+}
+
+/* Hover effect for table rows */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Changes background color of table rows on hover */
+}
+
+/* Styles for buttons with generic class */
+.btn {
+  margin-left: 450px; /* Adds left margin to position button horizontally */
+  margin-bottom: 40px; /* Adds bottom margin to space buttons vertically */
+  margin-right: 0px; /* Removes right margin */
+  border-radius: none; /* 'none' is not a valid value; use a specific value like 0 or a valid unit */
+}
+
+/* Styles for h2 elements */
+.h2 {
+  font-weight: bolder; /* Makes the font weight bolder */
+  color: white; /* Sets text color to white */
+}

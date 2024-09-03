@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="admin-dashboard.component.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Admin Dashboard</h2>
+
+    <!-- Logout Button -->
+    <div class="d-flex justify-content-end mb-2">
+      <button class="btn btn-danger btn-sm" (click)="logout()">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </div>
+
+    <!-- Student Form for Adding or Editing -->
+    <div *ngIf="isEditing" class="card p-3 mb-3">
+      <h4 class="text-center">{{ editingIndex === -1 ? 'Add New Student' : 'Edit Student' }}</h4>
+      <form (ngSubmit)="saveStudent()">
+        <div class="form-group">
+          <label for="rollNo">Roll No:</label>
+          <input type="number" class="form-control" id="rollNo" [(ngModel)]="currentStudent.id" name="rollNo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sem1">Semester 1 Marks:</label>
+          <input type="number" class="form-control" id="sem1" [(ngModel)]="currentStudent.sem1" name="sem1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sem2">Semester 2 Marks:</label>
+          <input type="number" class="form-control" id="sem2" [(ngModel)]="currentStudent.sem2" name="sem2" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sem3">Semester 3 Marks:</label>
+          <input type="number" class="form-control" id="sem3" [(ngModel)]="currentStudent.sem3" name="sem3" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">{{ editingIndex === -1 ? 'Add' : 'Save' }}</button>
+        <button type="button" class="btn btn-secondary ml-2" (click)="cancelEdit()">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Button to Add New Student -->
+    <button *ngIf="!isEditing" class="btn btn-primary mb-3" (click)="addStudent()">Add New Student</button>
+
+    <!-- Student List Table -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Student Name</th>
+          <th>Sem 1 Marks</th>
+          <th>Sem 2 Marks</th>
+          <th>Sem 3 Marks</th>
+          <th>Total Marks</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students; let i = index">
+          <td>{{ student.id }}</td>
+          <td>{{ student.user.userName }}</td>
+          <td>{{ student.sem1 }}</td>
+          <td>{{ student.sem2 }}</td>
+          <td>{{ student.sem3 }}</td>
+          <td>{{ student.total }}</td>
+          <td>
+            <button class="btn btn-warning btn-sm button-space" (click)="editStudent(i)">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="deleteStudent(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

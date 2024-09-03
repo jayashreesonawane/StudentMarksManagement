@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student View</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="student-dashboard.component.css">
+</head>
+
+<body>
+  <div class="container mt-5 d-flex justify-content-center">
+    <div class="card p-4 position-relative" style="width: 100%; max-width: 600px;">
+      <h2 class="text-center mb-4 h2">Welcome, Student</h2>
+      <!-- Logout Button -->
+      <div class="d-flex justify-content-end mb-2 logout" style="display: flex; align-items: center; justify-content: space-between;">
+        <button class="btn btn-danger btn-sm" (click)="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </div>
+
+      <!-- Table to display student marks -->
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Sem 1 Marks</th>
+            <th>Sem 2 Marks</th>
+            <th>Sem 3 Marks</th>
+            <th>Total Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="studentMarks">
+            <td>{{studentMarks.user.id}}</td>
+            <td>{{studentMarks.user.userName}}</td>
+            <td>{{studentMarks.sem1}}</td>
+            <td>{{studentMarks.sem2}}</td>
+            <td>{{studentMarks.sem3}}</td>
+            <td>{{studentMarks.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+/* Import styles from another CSS file (likely for consistency across components) */
+@import url('../register/register.component.css');
+
+/* Styles for the card component */
+.card {
+  border-radius: 8px; /* Rounds the corners of the card */
+}
+
+/* Styles for the card header */
+.card-header {
+  color: black; /* Sets text color to black */
+  text-align: center; /* Centers text horizontally */
+  background: none; /* Removes any background */
+}
+
+/* Styles for the card body */
+.card-body {
+  padding: 2rem; /* Adds padding inside the card body */
+}
+
+/* Apply styles to the body element */
+body {
+  background-image: url('https://images.pexels.com/photos/5227311/pexels-photo-5227311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Sets a background image */
+  background-size: cover; /* Ensures the background image covers the entire body */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  height: 90vh; /* Sets height to 90% of the viewport height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  font-family: Arial, sans-serif; /* Sets the font family */
+}
+
+/* Styles for the container element */
+.container {
+  max-width: 400px; /* Limits the container width to 400px */
+  width: 100%; /* Makes the container full-width within its parent */
+  border-radius: 12px; /* Rounds the corners of the container */
+  padding: 0px; /* Removes padding */
+}
+
+/* Styles for the card component (duplicated but with specific styles) */
+.card {
+  max-width: 400px; /* Limits card width to 400px */
+  width: 100%; /* Makes the card full-width within its parent */
+  border-radius: 12px; /* Rounds the corners of the card */
+  background-color: rgba(255, 255, 255, 0.9); /* Sets a white background with slight transparency */
+}
+
+/* Styles for input group text */
+.input-group-text {
+  background-color: #fff; /* Sets background color to white */
+  border: 0; /* Removes border */
+  padding: 0.5rem; /* Adds padding inside the input group text */
+}
+
+/* Styles for input group control within the form */
+.input-group .form-control {
+  border-left: 0; /* Removes the left border */
+}
+
+/* Styles for primary buttons */
+.btn-primary {
+  border-radius: 20px; /* Rounds the corners of the button */
+  /* background-color: ; / / Optional: Uncomment to set a background color */
+  border: none; /* Removes the border */
+  padding: 0.6rem; /* Adds padding inside the button */
+  color: white; /* Sets text color to white */
+}
+
+  /* Hover effect for primary buttons */
+  .btn-primary:hover {
+    background-color: darkblue; /* Changes background color on hover */
+  }

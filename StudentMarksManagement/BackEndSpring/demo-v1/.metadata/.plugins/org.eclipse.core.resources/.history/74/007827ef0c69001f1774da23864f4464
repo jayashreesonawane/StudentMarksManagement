@@ -1,0 +1,16 @@
+package com.example.demo.exception;
+
+public class MarksFoundException extends RuntimeException{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public public MarksFoundException() {
+		// TODO Auto-generated constructor stub
+	}(String message) {
+		super(message);
+	}{
+
+}

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AngularProject1",
+    "\\AngularProject1\\src",
+    "\\AngularProject1\\src\\app",
+    "\\AngularProject1\\src\\app\\components",
+    "\\AngularProject1\\src\\app\\components\\admin-dashboard",
+    "\\AngularProject1\\src\\app\\components\\register",
+    "\\AngularProject1\\src\\app\\components\\student-dashboard",
+    "\\AngularProject1\\src\\app\\services"
+  ],
+  "SelectedNode": "\\AngularProject1\\src\\app\\components\\register\\register.component.ts",
+  "PreviewInSolutionExplorer": false
+}

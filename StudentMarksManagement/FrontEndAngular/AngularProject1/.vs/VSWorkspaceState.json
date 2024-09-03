@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\admin-dashboard",
+    "\\src\\app\\components\\home",
+    "\\src\\app\\components\\login",
+    "\\src\\app\\components\\register",
+    "\\src\\app\\components\\student-dashboard",
+    "\\src\\app\\services"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="register.component.css">
+</head>
+<body>
+  <div class="container mt-5 d-flex justify-content-center">
+    <div class="card p-4 shadow-lg">
+      <h2 class="text-center mb-4">Register</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="regId" class="font-weight-bold">ID:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-id-badge"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" id="regId" [(ngModel)]="id" name="id" placeholder="Enter your ID" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regUsername" class="font-weight-bold">Username:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" id="regUsername" [(ngModel)]="userName" name="userName" placeholder="Choose a username" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regPassword" class="font-weight-bold">Password:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-lock"></i>
+              </span>
+            </div>
+            <input type="password" class="form-control" id="regPassword" [(ngModel)]="password" name="password" placeholder="Create a password" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regType" class="font-weight-bold">Type:</label>
+          <select class="form-control" id="regType" [(ngModel)]="type" name="type">
+            <option value="Student">Student</option>
+            <!-- Add more options if needed -->
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">Register</button>
+      </form>
+      <p class="mt-4 text-center">Already have an account? <a href="/login" class="text-primary font-weight-bold">Login</a></p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+</body>
+</html>
